@@ -1,32 +1,24 @@
 import java.util.Arrays;
+import java.util.List;
 
-public class RemoveDuplicate {
+class RemoveDuplicate {
+    public List<List<String>> groupAnagrams(String[] strs) {
 
-    public static boolean isValid(String s) {
+        for(int i=0;i<strs.length;i++){
 
-        char[] ch = s.toCharArray();
-        boolean isvalid = true;
-
-
-        for (int i = 0; i < ch.length-1; i++) {
-            if(ch[i]=='"'||ch[i]=='"')
-                continue;
-            if (ch[i] != ch[i + 1]) {
-
-                 isvalid= false;
-            }
-            else if(isvalid==true)
-                isvalid=true;
         }
 
-        return isvalid;
+        return null;
+
+
     }
 
-    public static void main(String args[]) {
-     String s= "()";
-     char[] ch = s.toCharArray();
-        System.out.println(ch[0]+"/"+ch[1]);
-        System.out.println(isValid(s));
+    public static void main (String args[]){
+        String[] str= {"eat","tea","tan","ate","nat","bat"};
+        Arrays.sort(str);
+        for (int i=0;i<str.length;i++){
+            System.out.println(str[i]);
+        }
 
     }
 }
